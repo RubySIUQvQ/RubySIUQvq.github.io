@@ -1,0 +1,4 @@
+baseURL: https://jespery.github.io/
+languageCode: zh-cn
+title: RubySIU's Blog
+theme: ["PaperMod"]
