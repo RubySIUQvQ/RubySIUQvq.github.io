@@ -1,16 +1,10 @@
 ---
-typora-root-url: ./..\..\static
+title : '使用Hugo和GitHub部署博客'
+date : 2024-09-12T20:51:24+08:00
+draft : true
+ShowToc: true
+TocOpen: true
 ---
-
-+++
-title = 'How to Use Hugo on Github'
-date = 2024-09-12T20:51:24+08:00
-draft = true
-+++
-# 如何使用 Hugo 搭建博客并托管在 GitHub 上
-
-[TOC]
-
 ## 一、Windows 安装 Hugo
 
 ### 1. 准备工作

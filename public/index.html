@@ -2,25 +2,25 @@
 <html lang="en" dir="auto">
 
 <head>
-	<meta name="generator" content="Hugo 0.134.2"><meta charset="utf-8">
+	<meta name="generator" content="Hugo 0.134.2"><script src="/livereload.js?mindelay=10&amp;v=2&amp;port=1313&amp;path=livereload" data-no-instant defer></script><meta charset="utf-8">
 <meta http-equiv="X-UA-Compatible" content="IE=edge">
 <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-<meta name="robots" content="index, follow">
+<meta name="robots" content="noindex, nofollow">
 <title>RubySIU&#39;s Blog</title>
 
 <meta name="description" content="">
 <meta name="author" content="">
-<link rel="canonical" href="https://jespery.github.io/">
+<link rel="canonical" href="http://localhost:1313/">
 <link crossorigin="anonymous" href="/assets/css/stylesheet.54405a410796490bc874ab6181fac9b675753cc2b91375d8f882566459eca428.css" integrity="sha256-VEBaQQeWSQvIdKthgfrJtnV1PMK5E3XY&#43;IJWZFnspCg=" rel="preload stylesheet" as="style">
-<link rel="icon" href="https://jespery.github.io/favicon.ico">
-<link rel="icon" type="image/png" sizes="16x16" href="https://jespery.github.io/favicon-16x16.png">
-<link rel="icon" type="image/png" sizes="32x32" href="https://jespery.github.io/favicon-32x32.png">
-<link rel="apple-touch-icon" href="https://jespery.github.io/apple-touch-icon.png">
-<link rel="mask-icon" href="https://jespery.github.io/safari-pinned-tab.svg">
+<link rel="icon" href="http://localhost:1313/favicon.ico">
+<link rel="icon" type="image/png" sizes="16x16" href="http://localhost:1313/favicon-16x16.png">
+<link rel="icon" type="image/png" sizes="32x32" href="http://localhost:1313/favicon-32x32.png">
+<link rel="apple-touch-icon" href="http://localhost:1313/apple-touch-icon.png">
+<link rel="mask-icon" href="http://localhost:1313/safari-pinned-tab.svg">
 <meta name="theme-color" content="#2e2e33">
 <meta name="msapplication-TileColor" content="#2e2e33">
-<link rel="alternate" type="application/rss+xml" href="https://jespery.github.io/index.xml">
-<link rel="alternate" hreflang="en" href="https://jespery.github.io/">
+<link rel="alternate" type="application/rss+xml" href="http://localhost:1313/index.xml">
+<link rel="alternate" hreflang="en" href="http://localhost:1313/">
 <noscript>
     <style>
         #theme-toggle,
@@ -57,28 +57,7 @@
         }
 
     </style>
-</noscript><meta property="og:title" content="RubySIU&#39;s Blog" />
-<meta property="og:description" content="" />
-<meta property="og:type" content="website" />
-<meta property="og:url" content="https://jespery.github.io/" />
-
-<meta name="twitter:card" content="summary"/>
-<meta name="twitter:title" content="RubySIU&#39;s Blog"/>
-<meta name="twitter:description" content=""/>
-
-<script type="application/ld+json">
-{
-  "@context": "https://schema.org",
-  "@type": "Organization",
-  "name": "RubySIU's Blog",
-  "url": "https://jespery.github.io/",
-  "description": "",
-  "thumbnailUrl": "https://jespery.github.io/favicon.ico",
-  "sameAs": [
-      
-  ]
-}
-</script>
+</noscript>
 </head>
 
 <body class="list" id="top">
@@ -96,7 +75,7 @@
 <header class="header">
     <nav class="nav">
         <div class="logo">
-            <a href="https://jespery.github.io/" accesskey="h" title="RubySIU&#39;s Blog (Alt + H)">RubySIU&#39;s Blog</a>
+            <a href="http://localhost:1313/" accesskey="h" title="RubySIU&#39;s Blog (Alt + H)">RubySIU&#39;s Blog</a>
             <div class="logo-switches">
                 <button id="theme-toggle" accesskey="t" title="(Alt + T)">
                     <svg id="moon" xmlns="http://www.w3.org/2000/svg" width="24" height="18" viewBox="0 0 24 24"
@@ -125,10 +104,37 @@
     </nav>
 </header>
 <main class="main"> 
+
+<article class="first-entry"> 
+  <header class="entry-header">
+    <h2 class="entry-hint-parent">使用Hugo和GitHub部署博客
+      <span class="entry-hint" title="Draft">
+        <svg xmlns="http://www.w3.org/2000/svg" height="20" viewBox="0 -960 960 960" fill="currentColor">
+          <path
+            d="M160-410v-60h300v60H160Zm0-165v-60h470v60H160Zm0-165v-60h470v60H160Zm360 580v-123l221-220q9-9 20-13t22-4q12 0 23 4.5t20 13.5l37 37q9 9 13 20t4 22q0 11-4.5 22.5T862.09-380L643-160H520Zm300-263-37-37 37 37ZM580-220h38l121-122-18-19-19-18-122 121v38Zm141-141-19-18 37 37-18-19Z" />
+        </svg>
+      </span>
+    </h2>
+  </header>
+  <div class="entry-content">
+    <p>一、Windows 安装 Hugo 1. 准备工作 首先需要安装 Git 和 GO，这样的教程有很多。
+2. 预构建的二进制安装 在 hugo 发布页 下载最新的二进制文件，在合适的目录下解压，将目录添加的 PATH 中。
+二、构建网站并添加主题 建议使用 git bash。
+1. 构建网站 使用指令构建 hugo 网站。
+hugo new site your_blog_path 2. 添加主题 本步骤并不唯一，建议根据自己选择的主题所提供的安装文档进行安装。
+PaperMod 主题文档建议方法如下：
+git submodule add --depth=1 https://github.com/adityatelange/hugo-PaperMod.git themes/PaperMod git submodule update --init --recursive # needed when you reclone your repo (submodules may not get cloned automatically) 除此之外也可以使用 Git Clone、ZIP、Hugo module 等方法安装。
+修改配置文件 hugo.yaml ，添加 theme: [&#34;PaperMod&#34;]。
+三、撰写第一篇文章 1. 生成文章 使用指令生成文章文件 hugo new posts/first-post.md，文章在 contents 目录下。
+...</p>
+  </div>
+  <footer class="entry-footer"><span title='2024-09-12 20:51:24 +0800 CST'>September 12, 2024</span></footer>
+  <a class="entry-link" aria-label="post link to 使用Hugo和GitHub部署博客" href="http://localhost:1313/posts/how-to-use-hugo-on-github/"></a>
+</article>
     </main>
     
 <footer class="footer">
-        <span>&copy; 2024 <a href="https://jespery.github.io/">RubySIU&#39;s Blog</a></span> · 
+        <span>&copy; 2024 <a href="http://localhost:1313/">RubySIU&#39;s Blog</a></span> · 
 
     <span>
         Powered by
