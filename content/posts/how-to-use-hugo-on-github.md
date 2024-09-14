@@ -1,19 +1,24 @@
 ---
-title : '使用Hugo和GitHub部署博客'
-date : 2024-09-12T20:51:24+08:00
-draft : true
+title: '使用Hugo和GitHub部署博客'
+date: 2024-09-12T20:51:24+08:00
+draft: false
 ShowToc: true
 TocOpen: true
+typora-root-url: E:\Blog\static
 ---
+
 ## 一、Windows 安装 Hugo
 
 ### 1. 准备工作
+
 首先需要安装 Git 和 GO，这样的教程有很多。
 
 ### 2. 预构建的二进制安装
+
 在 [hugo 发布页](https://github.com/gohugoio/hugo/releases/latest) 下载最新的二进制文件，在合适的目录下解压，将目录添加的 `PATH` 中。
 
 ## 二、构建网站并添加主题
+
 > 建议使用 git bash。
 
 ### 1. 构建网站
@@ -68,93 +73,93 @@ git submodule update --init --recursive # needed when you reclone your repo (sub
 ```yaml
 # Sample workflow for building and deploying a Hugo site to GitHub Pages
 name: Deploy Hugo site to Pages
-
+​
 on:
-  # Runs on pushes targeting the default branch
+  # Runs on pushes targeting the default branch
   push:
-    branches:
-      - main
-
-  # Allows you to run this workflow manually from the Actions tab
+    branches:
+      - main
+​
+  # Allows you to run this workflow manually from the Actions tab
   workflow_dispatch:
-
+​
 # Sets permissions of the GITHUB_TOKEN to allow deployment to GitHub Pages
 permissions:
   contents: read
   pages: write
   id-token: write
-
+​
 # Allow only one concurrent deployment, skipping runs queued between the run in-progress and latest queued.
 # However, do NOT cancel in-progress runs as we want to allow these production deployments to complete.
 concurrency:
   group: "pages"
   cancel-in-progress: false
-
+​
 # Default to bash
 defaults:
   run:
-    shell: bash
-
+    shell: bash
+​
 jobs:
-  # Build job
+  # Build job
   build:
-    runs-on: ubuntu-latest
-    env:
-      HUGO_VERSION: 0.134.2
-    steps:
-      - name: Install Hugo CLI
-        run: |
-          wget -O ${{ runner.temp }}/hugo.deb https://github.com/gohugoio/hugo/releases/download/v${HUGO_VERSION}/hugo_extended_${HUGO_VERSION}_linux-amd64.deb \
-          && sudo dpkg -i ${{ runner.temp }}/hugo.deb          
-      - name: Install Dart Sass
-        run: sudo snap install dart-sass
-      - name: Checkout
-        uses: actions/checkout@v4
-        with:
-          submodules: recursive
-          fetch-depth: 0
-      - name: Setup Pages
-        id: pages
-        uses: actions/configure-pages@v5
-      - name: Install Node.js dependencies
-        run: "[[ -f package-lock.json || -f npm-shrinkwrap.json ]] && npm ci || true"
-      - name: Build with Hugo
-        env:
-          HUGO_CACHEDIR: ${{ runner.temp }}/hugo_cache
-          HUGO_ENVIRONMENT: production
-          TZ: America/Los_Angeles
-        run: |
-          hugo \
-            --gc \
-            --minify \
-            --baseURL "${{ steps.pages.outputs.base_url }}/"          
-      - name: Upload artifact
-        uses: actions/upload-pages-artifact@v3
-        with:
-          path: ./public
-
-  # Deployment job
+    runs-on: ubuntu-latest
+    env:
+      HUGO_VERSION: 0.134.2
+    steps:
+      - name: Install Hugo CLI
+        run: |
+          wget -O ${{ runner.temp }}/hugo.deb https://github.com/gohugoio/hugo/releases/download/v${HUGO_VERSION}/hugo_extended_${HUGO_VERSION}_linux-amd64.deb \
+          && sudo dpkg -i ${{ runner.temp }}/hugo.deb          
+      - name: Install Dart Sass
+        run: sudo snap install dart-sass
+      - name: Checkout
+        uses: actions/checkout@v4
+        with:
+          submodules: recursive
+          fetch-depth: 0
+      - name: Setup Pages
+        id: pages
+        uses: actions/configure-pages@v5
+      - name: Install Node.js dependencies
+        run: "[[ -f package-lock.json || -f npm-shrinkwrap.json ]] && npm ci || true"
+      - name: Build with Hugo
+        env:
+          HUGO_CACHEDIR: ${{ runner.temp }}/hugo_cache
+          HUGO_ENVIRONMENT: production
+          TZ: America/Los_Angeles
+        run: |
+          hugo \
+            --gc \
+            --minify \
+            --baseURL "${{ steps.pages.outputs.base_url }}/"          
+      - name: Upload artifact
+        uses: actions/upload-pages-artifact@v3
+        with:
+          path: ./public
+​
+  # Deployment job
   deploy:
-    environment:
-      name: github-pages
-      url: ${{ steps.deployment.outputs.page_url }}
-    runs-on: ubuntu-latest
-    needs: build
-    steps:
-      - uses: actions/checkout@v2
-        with:
-          submodules: true
-          fetch-depth: 0
-      - name: Deploy to GitHub Pages
-        id: deployment
-        uses: actions/deploy-pages@v4
+    environment:
+      name: github-pages
+      url: ${{ steps.deployment.outputs.page_url }}
+    runs-on: ubuntu-latest
+    needs: build
+    steps:
+      - uses: actions/checkout@v2
+        with:
+          submodules: true
+          fetch-depth: 0
+      - name: Deploy to GitHub Pages
+        id: deployment
+        uses: actions/deploy-pages@v4
 ```
 
 ### 2. 启用 Action
 
 在你的 `**.github.io` 库中的 `settings -> pages` 页面，将 `Build and deployment` 的 `Source` 改为 `GitHub Actions`。
 
-![1](/posts/images/how-to-use-hugo-on-github/1.png)
+![修改 Pages 为 Actions 生成](/posts/images/How-to-use-hugo-on-GitHub/1.png)
 
 ### 3. 提交修改
 
