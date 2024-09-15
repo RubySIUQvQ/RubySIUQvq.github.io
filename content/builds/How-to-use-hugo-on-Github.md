@@ -4,7 +4,8 @@ date: 2024-09-12T20:51:24+08:00
 draft: false
 ShowToc: true
 TocOpen: true
-typora-root-url: E:\Blog\static
+weight: 1
+typora-root-url: E:\Blog\static\
 ---
 
 ## 一、Windows 安装 Hugo

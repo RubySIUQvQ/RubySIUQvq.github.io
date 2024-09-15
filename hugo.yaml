@@ -2,3 +2,83 @@ baseURL: https://jespery.github.io/
 languageCode: zh-cn
 title: RubySIU's Blog
 theme: ["PaperMod"]
+
+enableInlineShortcodes: true #允许内联短码
+enableEmoji: true # 允许使用 Emoji 表情，建议 true
+enableRobotsTXT: true # 允许爬虫抓取到搜索引擎，建议 true
+
+hasCJKLanguage: true # 自动检测是否包含 中文日文韩文 如果文章中使用了很多中文引号的话可以开启
+
+buildDrafts: false
+buildFuture: false
+buildExpired: false
+
+paginate: 15
+
+minify:
+    disableXML: true
+
+# defaultContentLanguage: zh # 最顶部首先展示的语言页面
+# defaultContentLanguageInSubdir: true
+
+outputs:
+  home:
+    - HTML
+    - RSS
+    - JSON
+
+menu:
+  main:
+    - identifier: search
+      name: 🔍搜索
+      url: search/
+      weight: 1
+    - identifier: archives
+      name: ⏱时间轴
+      url: archives/
+      weight: 2
+
+params:
+  defaultTheme: auto
+  disableThemeToggle: false
+
+  profileMode:
+    enabled: true
+    title: "RubySIU's Blog" # optional default will be site title
+    # subtitle: ""
+    imageUrl: "chikaflare_icon.jpg" # optional
+    imageTitle: "奇可芙蕾雅！" # optional
+    imageWidth: 120 # custom size
+    imageHeight: 120 # custom size
+    buttons:
+      - name: 技术
+        url: "/posts"
+      - name: 搭建
+        url: "/builds"
+
+  socialIcons: # optional
+    - name: "email"
+      url: "mailto:junpo.yu@foxmail.com"
+    - name: "Github"
+      url: "https://github.com/JesperY"
+    - name: "RSS"
+      url: "index.xml"
+
+  ShowShareButtons: false
+  ShowReadingTime: true
+  ShowBreadCrumbs: false
+  ShowPostNavLinks: true
+  ShowCodeCopyButtons: true
+
+
+  fuseOpts:
+  isCaseSensitive: false
+  shouldSort: true
+  location: 0
+  distance: 1000
+  threshold: 0.4
+  minMatchCharLength: 0
+  # limit: 10 # refer: https://www.fusejs.io/api/methods.html#search
+  keys: ["title", "permalink", "summary", "content"]
+
+  

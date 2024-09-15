@@ -1,42 +1,22 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
   <channel>
-    <title>Posts on RubySIU&#39;s Blog</title>
+    <title>💡技术性文章 on RubySIU&#39;s Blog</title>
     <link>http://localhost:1313/posts/</link>
-    <description>Recent content in Posts on RubySIU&#39;s Blog</description>
+    <description>Recent content in 💡技术性文章 on RubySIU&#39;s Blog</description>
     <generator>Hugo -- 0.134.2</generator>
     <language>zh-cn</language>
-    <lastBuildDate>Thu, 12 Sep 2024 20:51:24 +0800</lastBuildDate>
+    <lastBuildDate>Sat, 14 Sep 2024 20:50:10 +0800</lastBuildDate>
     <atom:link href="http://localhost:1313/posts/index.xml" rel="self" type="application/rss+xml" />
     <item>
-      <title>使用Hugo和GitHub部署博客</title>
-      <link>http://localhost:1313/posts/how-to-use-hugo-on-github/</link>
-      <pubDate>Thu, 12 Sep 2024 20:51:24 +0800</pubDate>
-      <guid>http://localhost:1313/posts/how-to-use-hugo-on-github/</guid>
-      <description>&lt;h2 id=&#34;一windows-安装-hugo&#34;&gt;一、Windows 安装 Hugo&lt;/h2&gt;
-&lt;h3 id=&#34;1-准备工作&#34;&gt;1. 准备工作&lt;/h3&gt;
-&lt;p&gt;首先需要安装 Git 和 GO，这样的教程有很多。&lt;/p&gt;
-&lt;h3 id=&#34;2-预构建的二进制安装&#34;&gt;2. 预构建的二进制安装&lt;/h3&gt;
-&lt;p&gt;在 &lt;a href=&#34;https://github.com/gohugoio/hugo/releases/latest&#34;&gt;hugo 发布页&lt;/a&gt; 下载最新的二进制文件，在合适的目录下解压，将目录添加的 &lt;code&gt;PATH&lt;/code&gt; 中。&lt;/p&gt;
-&lt;h2 id=&#34;二构建网站并添加主题&#34;&gt;二、构建网站并添加主题&lt;/h2&gt;
-&lt;blockquote&gt;
-&lt;p&gt;建议使用 git bash。&lt;/p&gt;
-&lt;/blockquote&gt;
-&lt;h3 id=&#34;1-构建网站&#34;&gt;1. 构建网站&lt;/h3&gt;
-&lt;p&gt;使用指令构建 hugo 网站。&lt;/p&gt;
-&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;&#34;&gt;&lt;code class=&#34;language-bash&#34; data-lang=&#34;bash&#34;&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;hugo new site your_blog_path
-&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;h3 id=&#34;2-添加主题&#34;&gt;2. 添加主题&lt;/h3&gt;
-&lt;p&gt;&lt;strong&gt;本步骤并不唯一，建议根据自己选择的主题所提供的安装文档进行安装。&lt;/strong&gt;&lt;/p&gt;
-&lt;p&gt;&lt;a href=&#34;https://adityatelange.github.io/hugo-PaperMod/&#34;&gt;PaperMod&lt;/a&gt; 主题文档建议方法如下：&lt;/p&gt;
-&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;&#34;&gt;&lt;code class=&#34;language-bash&#34; data-lang=&#34;bash&#34;&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;git submodule add --depth&lt;span style=&#34;color:#f92672&#34;&gt;=&lt;/span&gt;&lt;span style=&#34;color:#ae81ff&#34;&gt;1&lt;/span&gt; https://github.com/adityatelange/hugo-PaperMod.git themes/PaperMod
-&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;git submodule update --init --recursive &lt;span style=&#34;color:#75715e&#34;&gt;# needed when you reclone your repo (submodules may not get cloned automatically)&lt;/span&gt;
-&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;blockquote&gt;
-&lt;p&gt;除此之外也可以使用 &lt;code&gt;Git Clone&lt;/code&gt;、&lt;code&gt;ZIP&lt;/code&gt;、&lt;code&gt;Hugo module &lt;/code&gt; 等方法安装。&lt;/p&gt;
-&lt;/blockquote&gt;
-&lt;p&gt;修改配置文件 &lt;code&gt;hugo.yaml&lt;/code&gt; ，添加 &lt;code&gt;theme: [&amp;quot;PaperMod&amp;quot;]&lt;/code&gt;。&lt;/p&gt;
-&lt;h2 id=&#34;三撰写第一篇文章&#34;&gt;三、撰写第一篇文章&lt;/h2&gt;
-&lt;h3 id=&#34;1-生成文章&#34;&gt;1. 生成文章&lt;/h3&gt;
-&lt;p&gt;使用指令生成文章文件 &lt;code&gt;hugo new posts/first-post.md&lt;/code&gt;，文章在 &lt;code&gt;contents&lt;/code&gt; 目录下。&lt;/p&gt;</description>
+      <title>将多个区域的 GeoTIFF 文件合并为全球 TIFF</title>
+      <link>http://localhost:1313/posts/2024/merge-regional-tif-to-global/</link>
+      <pubDate>Sat, 14 Sep 2024 20:50:10 +0800</pubDate>
+      <guid>http://localhost:1313/posts/2024/merge-regional-tif-to-global/</guid>
+      <description>&lt;h2 id=&#34;一使用-arcmap-合并&#34;&gt;一、使用 ArcMap 合并&lt;/h2&gt;
+&lt;p&gt;使用 ArcMap 的工具箱对多个 TIFF 文件进行合并。&lt;/p&gt;
+&lt;p&gt;在 &lt;code&gt;ArcToolBox -&amp;gt; 数据管理工具 -&amp;gt; 栅格 -&amp;gt; 栅格数据集 -&amp;gt; 镶嵌至新栅格&lt;/code&gt; 。&lt;/p&gt;
+&lt;p&gt;打开工具后，在 &lt;code&gt;输入栅格&lt;/code&gt; 栏选中需要合并的数据，在 &lt;code&gt;输出位置&lt;/code&gt; 选定输出路径。在&lt;code&gt;具有扩展名的栅格数据集名称&lt;/code&gt; 设置输出文件名，要带扩展名。波段数和源文件波段数相同，其余可选参数建议查询后按需填写。&lt;/p&gt;</description>
     </item>
   </channel>
 </rss>
