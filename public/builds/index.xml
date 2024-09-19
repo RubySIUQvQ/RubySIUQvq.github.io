@@ -9,21 +9,10 @@
     <lastBuildDate>Sat, 14 Sep 2024 21:14:25 +0800</lastBuildDate>
     <atom:link href="http://localhost:1313/builds/index.xml" rel="self" type="application/rss+xml" />
     <item>
-      <title>使用Hugo和GitHub部署博客</title>
-      <link>http://localhost:1313/builds/how-to-use-hugo-on-github/</link>
-      <pubDate>Thu, 12 Sep 2024 20:51:24 +0800</pubDate>
-      <guid>http://localhost:1313/builds/how-to-use-hugo-on-github/</guid>
-      <description>&lt;h2 id=&#34;一windows-安装-hugo&#34;&gt;一、Windows 安装 Hugo&lt;/h2&gt;
-&lt;h3 id=&#34;1-准备工作&#34;&gt;1. 准备工作&lt;/h3&gt;
-&lt;p&gt;首先需要安装 Git 和 GO，这样的教程有很多。&lt;/p&gt;
-&lt;h3 id=&#34;2-预构建的二进制安装&#34;&gt;2. 预构建的二进制安装&lt;/h3&gt;
-&lt;p&gt;在 &lt;a href=&#34;https://github.com/gohugoio/hugo/releases/latest&#34;&gt;hugo 发布页&lt;/a&gt; 下载最新的二进制文件，在合适的目录下解压，将目录添加的 &lt;code&gt;PATH&lt;/code&gt; 中。&lt;/p&gt;</description>
-    </item>
-    <item>
       <title>如何配置 PaperMod 主题</title>
-      <link>http://localhost:1313/builds/how-to-configure-papermod-theme/</link>
+      <link>http://localhost:1313/builds/2024/how-to-configure-papermod-theme/</link>
       <pubDate>Sat, 14 Sep 2024 21:14:25 +0800</pubDate>
-      <guid>http://localhost:1313/builds/how-to-configure-papermod-theme/</guid>
+      <guid>http://localhost:1313/builds/2024/how-to-configure-papermod-theme/</guid>
       <description>&lt;p&gt;所有的配置信息都填写在网站根目录下的 &lt;code&gt;hugo.yaml&lt;/code&gt; 文件中。&lt;/p&gt;
 &lt;h2 id=&#34;一配置文件&#34;&gt;一、配置文件&lt;/h2&gt;
 &lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;&#34;&gt;&lt;code class=&#34;language-yaml&#34; data-lang=&#34;yaml&#34;&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#f92672&#34;&gt;baseURL&lt;/span&gt;: &lt;span style=&#34;color:#ae81ff&#34;&gt;https://jespery.github.io/&lt;/span&gt; &lt;span style=&#34;color:#75715e&#34;&gt;# 自己网站的 url&lt;/span&gt;
@@ -112,6 +101,17 @@
 &lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;  
 &lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;h2 id=&#34;二修改时间轴页面为中文&#34;&gt;二、修改时间轴页面为中文&lt;/h2&gt;
 &lt;p&gt;此部分照搬 &lt;a href=&#34;https://www.sulvblog.cn/posts/blog/hugo_archives_chinese/&#34;&gt;Sulv&amp;rsquo;s Blog&lt;/a&gt;，定位到 &lt;code&gt;themes/PaperMod/layouts/_default/archives.html&lt;/code&gt;，建议将&lt;code&gt; layouts、i18n、assets&lt;/code&gt;下的文件复制到站点根目录，以免更新主题导致覆盖。&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>使用Hugo和GitHub部署博客</title>
+      <link>http://localhost:1313/builds/2024/how-to-use-hugo-on-github/</link>
+      <pubDate>Thu, 12 Sep 2024 20:51:24 +0800</pubDate>
+      <guid>http://localhost:1313/builds/2024/how-to-use-hugo-on-github/</guid>
+      <description>&lt;h2 id=&#34;一windows-安装-hugo&#34;&gt;一、Windows 安装 Hugo&lt;/h2&gt;
+&lt;h3 id=&#34;1-准备工作&#34;&gt;1. 准备工作&lt;/h3&gt;
+&lt;p&gt;首先需要安装 Git 和 GO，这样的教程有很多。&lt;/p&gt;
+&lt;h3 id=&#34;2-预构建的二进制安装&#34;&gt;2. 预构建的二进制安装&lt;/h3&gt;
+&lt;p&gt;在 &lt;a href=&#34;https://github.com/gohugoio/hugo/releases/latest&#34;&gt;hugo 发布页&lt;/a&gt; 下载最新的二进制文件，在合适的目录下解压，将目录添加的 &lt;code&gt;PATH&lt;/code&gt; 中。&lt;/p&gt;</description>
     </item>
   </channel>
 </rss>

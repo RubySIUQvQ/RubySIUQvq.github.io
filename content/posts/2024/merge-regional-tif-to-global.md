@@ -29,3 +29,4 @@ gdalwarp input_1.tif input_2.tif -dstnodata 0 -t_srs EPSG:4326 -te -180 -90 180 
 
 > 此处不推荐使用 `gdal_merge.py`，因为其占用内存较高。
 
+可以修改 `-r` 参数指定不同的采样方法，如果需要还可以加入 -`srcnodata 0` 参数来指定重采样时不要处理的原始数据中的无用值。
