@@ -4,10 +4,19 @@
     <title>💡技术性文章 on RubySIU&#39;s Blog</title>
     <link>http://localhost:1313/posts/</link>
     <description>Recent content in 💡技术性文章 on RubySIU&#39;s Blog</description>
-    <generator>Hugo -- 0.134.2</generator>
+    <generator>Hugo -- 0.134.3</generator>
     <language>zh-cn</language>
-    <lastBuildDate>Sat, 14 Sep 2024 20:50:10 +0800</lastBuildDate>
+    <lastBuildDate>Sun, 22 Sep 2024 11:00:16 +0800</lastBuildDate>
     <atom:link href="http://localhost:1313/posts/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>修改 ssh 端口解决连接 Github 超时问题</title>
+      <link>http://localhost:1313/posts/2024/modify-ssh-port-for-github/</link>
+      <pubDate>Sun, 22 Sep 2024 11:00:16 +0800</pubDate>
+      <guid>http://localhost:1313/posts/2024/modify-ssh-port-for-github/</guid>
+      <description>&lt;p&gt;某一天突然不能使用 SSH 连接到 Github 了，无论是 clone 还是 push 都不行，报错如下：&lt;/p&gt;
+&lt;pre tabindex=&#34;0&#34;&gt;&lt;code class=&#34;language-ba&#34; data-lang=&#34;ba&#34;&gt;ssh: connect to host github.com port 22: Connection timed out
+&lt;/code&gt;&lt;/pre&gt;&lt;p&gt;也不知道是网络问题还是开启了 2FA，亦或者是防火墙的原因？但是一番排查都没有解决问题，随后在 StackFlow 上发现了如下配置方法。&lt;/p&gt;</description>
+    </item>
     <item>
       <title>将多个区域的 GeoTIFF 文件合并为全球 TIFF</title>
       <link>http://localhost:1313/posts/2024/merge-regional-tif-to-global/</link>

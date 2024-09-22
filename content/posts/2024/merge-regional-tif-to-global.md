@@ -4,7 +4,7 @@ date: 2024-09-14T20:50:10+08:00
 draft: false
 ShowToc: true
 TocOpen: true
-typora-root-url: E:\Blog\static
+typora-root-url: ..\..\..\static\
 ---
 
 ## 一、使用 ArcMap 合并

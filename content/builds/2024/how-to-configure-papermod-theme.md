@@ -4,7 +4,7 @@ date: 2024-09-14T21:14:25+08:00
 draft: false
 ShowToc: true
 TocOpen: true
-typora-root-url: E:\Blog\static
+typora-root-url: ..\..\..\static\
 ---
 
 
