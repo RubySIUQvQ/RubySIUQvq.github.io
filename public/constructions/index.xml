@@ -2,17 +2,17 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
   <channel>
     <title>🛠️总想搭建点什么 on RubySIU&#39;s Blog</title>
-    <link>http://localhost:1313/builds/</link>
+    <link>http://localhost:1313/constructions/</link>
     <description>Recent content in 🛠️总想搭建点什么 on RubySIU&#39;s Blog</description>
-    <generator>Hugo -- 0.134.3</generator>
+    <generator>Hugo -- 0.134.2</generator>
     <language>zh-cn</language>
     <lastBuildDate>Sat, 14 Sep 2024 21:14:25 +0800</lastBuildDate>
-    <atom:link href="http://localhost:1313/builds/index.xml" rel="self" type="application/rss+xml" />
+    <atom:link href="http://localhost:1313/constructions/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>如何配置 PaperMod 主题</title>
-      <link>http://localhost:1313/builds/2024/how-to-configure-papermod-theme/</link>
+      <link>http://localhost:1313/constructions/2024/how-to-configure-papermod-theme/</link>
       <pubDate>Sat, 14 Sep 2024 21:14:25 +0800</pubDate>
-      <guid>http://localhost:1313/builds/2024/how-to-configure-papermod-theme/</guid>
+      <guid>http://localhost:1313/constructions/2024/how-to-configure-papermod-theme/</guid>
       <description>&lt;p&gt;所有的配置信息都填写在网站根目录下的 &lt;code&gt;hugo.yaml&lt;/code&gt; 文件中。&lt;/p&gt;
 &lt;h2 id=&#34;一配置文件&#34;&gt;一、配置文件&lt;/h2&gt;
 &lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;&#34;&gt;&lt;code class=&#34;language-yaml&#34; data-lang=&#34;yaml&#34;&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#f92672&#34;&gt;baseURL&lt;/span&gt;: &lt;span style=&#34;color:#ae81ff&#34;&gt;https://jespery.github.io/&lt;/span&gt; &lt;span style=&#34;color:#75715e&#34;&gt;# 自己网站的 url&lt;/span&gt;
@@ -58,6 +58,7 @@
 &lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#f92672&#34;&gt;params&lt;/span&gt;: &lt;span style=&#34;color:#75715e&#34;&gt;# 参数&lt;/span&gt;
 &lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;  &lt;span style=&#34;color:#f92672&#34;&gt;defaultTheme&lt;/span&gt;: &lt;span style=&#34;color:#ae81ff&#34;&gt;auto&lt;/span&gt; &lt;span style=&#34;color:#75715e&#34;&gt;# 自动切换亮暗主题&lt;/span&gt;
 &lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;  &lt;span style=&#34;color:#f92672&#34;&gt;disableThemeToggle&lt;/span&gt;: &lt;span style=&#34;color:#66d9ef&#34;&gt;false&lt;/span&gt; &lt;span style=&#34;color:#75715e&#34;&gt;# 启用亮暗切换按钮&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;  &lt;span style=&#34;color:#f92672&#34;&gt;ShowAllPagesInArchive&lt;/span&gt;: &lt;span style=&#34;color:#66d9ef&#34;&gt;true&lt;/span&gt; &lt;span style=&#34;color:#75715e&#34;&gt;# 在 Archive 页面显示所有文件夹下的文章&lt;/span&gt;
 &lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;
 &lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;  &lt;span style=&#34;color:#f92672&#34;&gt;profileMode&lt;/span&gt;: &lt;span style=&#34;color:#75715e&#34;&gt;# 使用 profile 模式&lt;/span&gt;
 &lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;    &lt;span style=&#34;color:#f92672&#34;&gt;enabled&lt;/span&gt;: &lt;span style=&#34;color:#66d9ef&#34;&gt;true&lt;/span&gt; 
@@ -104,9 +105,9 @@
     </item>
     <item>
       <title>使用Hugo和GitHub部署博客</title>
-      <link>http://localhost:1313/builds/2024/how-to-use-hugo-on-github/</link>
+      <link>http://localhost:1313/constructions/2024/how-to-use-hugo-on-github/</link>
       <pubDate>Thu, 12 Sep 2024 20:51:24 +0800</pubDate>
-      <guid>http://localhost:1313/builds/2024/how-to-use-hugo-on-github/</guid>
+      <guid>http://localhost:1313/constructions/2024/how-to-use-hugo-on-github/</guid>
       <description>&lt;h2 id=&#34;一windows-安装-hugo&#34;&gt;一、Windows 安装 Hugo&lt;/h2&gt;
 &lt;h3 id=&#34;1-准备工作&#34;&gt;1. 准备工作&lt;/h3&gt;
 &lt;p&gt;首先需要安装 Git 和 GO，这样的教程有很多。&lt;/p&gt;

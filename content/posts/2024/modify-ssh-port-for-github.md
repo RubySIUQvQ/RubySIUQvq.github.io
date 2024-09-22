@@ -1,7 +1,7 @@
 ---
 title: '修改 ssh 端口解决连接 Github 超时问题'
 date: 2024-09-22T11:00:16+08:00
-draft: true
+draft: false
 ShowToc: true
 TocOpen: true
 typora-root-url: ..\..\..\static

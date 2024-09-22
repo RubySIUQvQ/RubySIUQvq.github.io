@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
+  <channel>
+    <title>📖学到老，活到老 on RubySIU&#39;s Blog</title>
+    <link>http://localhost:1313/knowledge/</link>
+    <description>Recent content in 📖学到老，活到老 on RubySIU&#39;s Blog</description>
+    <generator>Hugo -- 0.134.2</generator>
+    <language>zh-cn</language>
+    <lastBuildDate>Sun, 22 Sep 2024 17:01:16 +0800</lastBuildDate>
+    <atom:link href="http://localhost:1313/knowledge/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>什么是似然</title>
+      <link>http://localhost:1313/knowledge/2024/what-is-likelihood/</link>
+      <pubDate>Sun, 22 Sep 2024 17:01:16 +0800</pubDate>
+      <guid>http://localhost:1313/knowledge/2024/what-is-likelihood/</guid>
+      <description>&lt;p&gt;我们对概率（Probability）都很了解，描述一个事件发生的可能性。例如投掷一枚硬币，其正面向上的概率为 0.5，连续两次都是正面向上的概率为 0.25。&lt;/p&gt;</description>
+    </item>
+  </channel>
+</rss>

@@ -52,6 +52,7 @@ menu: # 主页右上角菜单栏
 params: # 参数
   defaultTheme: auto # 自动切换亮暗主题
   disableThemeToggle: false # 启用亮暗切换按钮
+  ShowAllPagesInArchive: true # 在 Archive 页面显示所有文件夹下的文章
 
   profileMode: # 使用 profile 模式
     enabled: true 
@@ -96,7 +97,7 @@ params: # 参数
 二、修改时间轴页面为中文
 此部分照搬 Sulv&rsquo;s Blog，定位到 themes/PaperMod/layouts/_default/archives.html，建议将 layouts、i18n、assets下的文件复制到站点根目录，以免更新主题导致覆盖。">
 <meta name="author" content="">
-<link rel="canonical" href="http://localhost:1313/builds/2024/how-to-configure-papermod-theme/">
+<link rel="canonical" href="http://localhost:1313/constructions/2024/how-to-configure-papermod-theme/">
 <link crossorigin="anonymous" href="/assets/css/stylesheet.54405a410796490bc874ab6181fac9b675753cc2b91375d8f882566459eca428.css" integrity="sha256-VEBaQQeWSQvIdKthgfrJtnV1PMK5E3XY&#43;IJWZFnspCg=" rel="preload stylesheet" as="style">
 <link rel="icon" href="http://localhost:1313/favicon.ico">
 <link rel="icon" type="image/png" sizes="16x16" href="http://localhost:1313/favicon-16x16.png">
@@ -105,7 +106,7 @@ params: # 参数
 <link rel="mask-icon" href="http://localhost:1313/safari-pinned-tab.svg">
 <meta name="theme-color" content="#2e2e33">
 <meta name="msapplication-TileColor" content="#2e2e33">
-<link rel="alternate" hreflang="en" href="http://localhost:1313/builds/2024/how-to-configure-papermod-theme/">
+<link rel="alternate" hreflang="en" href="http://localhost:1313/constructions/2024/how-to-configure-papermod-theme/">
 <noscript>
     <style>
         #theme-toggle,
@@ -271,6 +272,7 @@ params: # 参数
 </span></span><span style="display:flex;"><span><span style="color:#f92672">params</span>: <span style="color:#75715e"># 参数</span>
 </span></span><span style="display:flex;"><span>  <span style="color:#f92672">defaultTheme</span>: <span style="color:#ae81ff">auto</span> <span style="color:#75715e"># 自动切换亮暗主题</span>
 </span></span><span style="display:flex;"><span>  <span style="color:#f92672">disableThemeToggle</span>: <span style="color:#66d9ef">false</span> <span style="color:#75715e"># 启用亮暗切换按钮</span>
+</span></span><span style="display:flex;"><span>  <span style="color:#f92672">ShowAllPagesInArchive</span>: <span style="color:#66d9ef">true</span> <span style="color:#75715e"># 在 Archive 页面显示所有文件夹下的文章</span>
 </span></span><span style="display:flex;"><span>
 </span></span><span style="display:flex;"><span>  <span style="color:#f92672">profileMode</span>: <span style="color:#75715e"># 使用 profile 模式</span>
 </span></span><span style="display:flex;"><span>    <span style="color:#f92672">enabled</span>: <span style="color:#66d9ef">true</span> 
@@ -411,13 +413,6 @@ params: # 参数
   <footer class="post-footer">
     <ul class="post-tags">
     </ul>
-<nav class="paginav">
-  <a class="next" href="http://localhost:1313/builds/2024/how-to-use-hugo-on-github/">
-    <span class="title">Next »</span>
-    <br>
-    <span>使用Hugo和GitHub部署博客</span>
-  </a>
-</nav>
 
   </footer>
 </article>

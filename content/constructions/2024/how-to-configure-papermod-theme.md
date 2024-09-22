@@ -57,6 +57,7 @@ menu: # 主页右上角菜单栏
 params: # 参数
   defaultTheme: auto # 自动切换亮暗主题
   disableThemeToggle: false # 启用亮暗切换按钮
+  ShowAllPagesInArchive: true # 在 Archive 页面显示所有文件夹下的文章
 
   profileMode: # 使用 profile 模式
     enabled: true 

@@ -41,6 +41,7 @@ menu:
 params:
   defaultTheme: auto
   disableThemeToggle: false
+  ShowAllPagesInArchive: true
 
   profileMode:
     enabled: true
@@ -54,7 +55,9 @@ params:
       - name: 技术
         url: "/posts"
       - name: 搭建
-        url: "/builds"
+        url: "/constructions"
+      - name: 知识
+        url: "/knowledge"
 
   socialIcons: # optional
     - name: "email"
