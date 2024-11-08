@@ -3,10 +3,22 @@
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
     <loc>http://localhost:1313/knowledge/</loc>
-    <lastmod>2024-09-22T17:01:16+08:00</lastmod>
+    <lastmod>2024-11-06T15:48:37+08:00</lastmod>
   </url><url>
     <loc>http://localhost:1313/</loc>
-    <lastmod>2024-09-22T17:01:16+08:00</lastmod>
+    <lastmod>2024-11-06T15:48:37+08:00</lastmod>
+  </url><url>
+    <loc>http://localhost:1313/knowledge/2024/what-is-r-square/</loc>
+    <lastmod>2024-11-06T15:48:37+08:00</lastmod>
+  </url><url>
+    <loc>http://localhost:1313/constructions/2024/make-latex-compatible/</loc>
+    <lastmod>2024-11-01T20:57:03+08:00</lastmod>
+  </url><url>
+    <loc>http://localhost:1313/constructions/</loc>
+    <lastmod>2024-11-01T20:57:03+08:00</lastmod>
+  </url><url>
+    <loc>http://localhost:1313/knowledge/2024/how-to-write-a-paper/</loc>
+    <lastmod>2024-10-15T09:38:47+08:00</lastmod>
   </url><url>
     <loc>http://localhost:1313/knowledge/2024/what-is-likelihood/</loc>
     <lastmod>2024-09-22T17:01:16+08:00</lastmod>
@@ -18,9 +30,6 @@
     <lastmod>2024-09-22T11:00:16+08:00</lastmod>
   </url><url>
     <loc>http://localhost:1313/constructions/2024/how-to-configure-papermod-theme/</loc>
-    <lastmod>2024-09-14T21:14:25+08:00</lastmod>
-  </url><url>
-    <loc>http://localhost:1313/constructions/</loc>
     <lastmod>2024-09-14T21:14:25+08:00</lastmod>
   </url><url>
     <loc>http://localhost:1313/posts/2024/merge-regional-tif-to-global/</loc>

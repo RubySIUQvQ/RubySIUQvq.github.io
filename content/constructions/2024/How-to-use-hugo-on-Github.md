@@ -159,7 +159,7 @@ jobs:
 
 在你的 `**.github.io` 库中的 `settings -> pages` 页面，将 `Build and deployment` 的 `Source` 改为 `GitHub Actions`。
 
-![修改 Pages 为 Actions 生成](/posts/images/How-to-use-hugo-on-GitHub/1.png)
+![修改 Pages 为 Actions 生成](/constructions/images/How-to-use-hugo-on-GitHub/1.png)
 
 ### 3. 提交修改
 

@@ -296,7 +296,7 @@
 </span></span><span style="display:flex;"><span>        <span style="color:#f92672">uses</span>: <span style="color:#ae81ff">actions/deploy-pages@v4</span>
 </span></span></code></pre></div><h3 id="2-启用-action">2. 启用 Action<a hidden class="anchor" aria-hidden="true" href="#2-启用-action">#</a></h3>
 <p>在你的 <code>**.github.io</code> 库中的 <code>settings -&gt; pages</code> 页面，将 <code>Build and deployment</code> 的 <code>Source</code> 改为 <code>GitHub Actions</code>。</p>
-<p><img loading="lazy" src="/posts/images/How-to-use-hugo-on-GitHub/1.png" alt="修改 Pages 为 Actions 生成"  />
+<p><img loading="lazy" src="/constructions/images/How-to-use-hugo-on-GitHub/1.png" alt="修改 Pages 为 Actions 生成"  />
 </p>
 <h3 id="3-提交修改">3. 提交修改<a hidden class="anchor" aria-hidden="true" href="#3-提交修改">#</a></h3>
 <p>将整个博客站点的文件提交到 <code>**.github.io</code>，会自动执行 <code>Action</code>，构建网站。在库的 <code>Action</code> 页面可以看到构建状态。</p>
@@ -307,6 +307,13 @@
   <footer class="post-footer">
     <ul class="post-tags">
     </ul>
+<nav class="paginav">
+  <a class="prev" href="http://localhost:1313/constructions/2024/how-to-configure-papermod-theme/">
+    <span class="title">« Prev</span>
+    <br>
+    <span>如何配置 PaperMod 主题</span>
+  </a>
+</nav>
 
   </footer>
 </article>
@@ -428,6 +435,41 @@
         }
     });
 </script>
+<script type="text/javascript"
+        async
+        src="https://cdn.bootcss.com/mathjax/2.7.3/MathJax.js?config=TeX-AMS-MML_HTMLorMML">
+MathJax.Hub.Config({
+  tex2jax: {
+    inlineMath: [['$','$'], ['\\(','\\)']],
+    displayMath: [['$$','$$'], ['\[\[','\]\]']],
+    processEscapes: true,
+    processEnvironments: true,
+    skipTags: ['script', 'noscript', 'style', 'textarea', 'pre'],
+    TeX: { equationNumbers: { autoNumber: "AMS" },
+         extensions: ["AMSmath.js", "AMSsymbols.js"] }
+  }
+});
+
+MathJax.Hub.Queue(function() {
+    
+    
+    
+    var all = MathJax.Hub.getAllJax(), i;
+    for(i = 0; i < all.length; i += 1) {
+        all[i].SourceElement().parentNode.className += ' has-jax';
+    }
+});
+</script>
+
+<style>
+code.has-jax {
+    font: inherit;
+    font-size: 100%;
+    background: inherit;
+    border: inherit;
+    color: #515151;
+}
+</style>
 </body>
 
 </html>
