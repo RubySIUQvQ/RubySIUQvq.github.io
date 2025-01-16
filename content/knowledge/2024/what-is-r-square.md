@@ -37,15 +37,14 @@ $$
 
 决定系数的公式如下：
 $$
-r^2=\frac{SSR}{SST}=1-\frac{SSE}{SST}\\
-
-SST=SSR+SSE=\sum(y-\bar y)^2\\
-
-SSR=\sum(\hat y-\bar y)^2\\
-
-SSE=\sum(y-\hat y)^2
+\begin{align*}
+r^2 &= \frac{SSR}{SST} = 1 - \frac{SSE}{SST} \newline
+SST &= SSR + SSE = \sum (y - \bar{y})^2 \newline
+SSR &= \sum (\hat{y} - \bar{y})^2 \newline
+SSE &= \sum (y - \hat{y})^2
+\end{align*}
 $$
- 在线性回归问题中，可以代入$\hat y=ax+b$，推导后发现决定系数等于相关系数的平方。
+在线性回归问题中，可以代入$\hat y=ax+b$，推导后发现决定系数等于相关系数的平方。
 
 但是在非线性回归问题中，不可以将两者划为平方关系，因为其计算方法和含义完全不同。
 

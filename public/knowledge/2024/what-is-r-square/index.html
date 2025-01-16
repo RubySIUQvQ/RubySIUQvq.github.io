@@ -166,10 +166,12 @@ $$
 </blockquote>
 <p>决定系数的公式如下：
 $$
-r^2=\frac{SSR}{SST}=1-\frac{SSE}{SST}\</p>
-<p>SST=SSR+SSE=\sum(y-\bar y)^2\</p>
-<p>SSR=\sum(\hat y-\bar y)^2\</p>
-<p>SSE=\sum(y-\hat y)^2
+\begin{align*}
+r^2 &amp;= \frac{SSR}{SST} = 1 - \frac{SSE}{SST} \newline
+SST &amp;= SSR + SSE = \sum (y - \bar{y})^2 \newline
+SSR &amp;= \sum (\hat{y} - \bar{y})^2 \newline
+SSE &amp;= \sum (y - \hat{y})^2
+\end{align*}
 $$
 在线性回归问题中，可以代入$\hat y=ax+b$，推导后发现决定系数等于相关系数的平方。</p>
 <p>但是在非线性回归问题中，不可以将两者划为平方关系，因为其计算方法和含义完全不同。</p>
@@ -206,7 +208,7 @@ $$
     </main>
     
 <footer class="footer">
-        <span>&copy; 2024 <a href="http://localhost:1313/">RubySIU&#39;s Blog</a></span> · 
+        <span>&copy; 2025 <a href="http://localhost:1313/">RubySIU&#39;s Blog</a></span> · 
 
     <span>
         Powered by

@@ -25,16 +25,6 @@
 &lt;p&gt;最简单的做法是将以下代码插入到 &lt;code&gt;layouts\partials\footer.html&lt;/code&gt;，也可以用自己喜欢的方式将 js 代码添加到页面 html 中。&lt;/p&gt;</description>
     </item>
     <item>
-      <title>如何写一篇论文</title>
-      <link>http://localhost:1313/knowledge/2024/how-to-write-a-paper/</link>
-      <pubDate>Tue, 15 Oct 2024 09:38:47 +0800</pubDate>
-      <guid>http://localhost:1313/knowledge/2024/how-to-write-a-paper/</guid>
-      <description>&lt;p&gt;准备开始着手写自己的第一篇论文，结果憋了半个月憋不出半坨。。。&lt;/p&gt;
-&lt;p&gt;于是决定先学习一下写论文的基本流程和技巧。&lt;/p&gt;
-&lt;h2 id=&#34;一论文的基本结构&#34;&gt;一、论文的基本结构&lt;/h2&gt;
-&lt;p&gt;基本的论文是三段式结构，分别是：引言、（目标-方法-结果）、讨论-结论。&lt;/p&gt;</description>
-    </item>
-    <item>
       <title>什么是似然</title>
       <link>http://localhost:1313/knowledge/2024/what-is-likelihood/</link>
       <pubDate>Sun, 22 Sep 2024 17:01:16 +0800</pubDate>
